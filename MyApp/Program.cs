@@ -4,7 +4,7 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Hello, World!");
-        GreetUser("User");
+        GreetUser(args.Length > 0 ? args[0] : "Guest");
     }
 
     static void GreetUser(string name)
